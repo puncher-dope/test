@@ -1,0 +1,869 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 16px;
+    width: 100%;
+    background: #000;
+}
+
+a{
+    text-decoration: none;
+}
+image{
+    max-width: 100%;
+    background-repeat: no-repeat;
+}
+.wrapper{
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(26,14,1,1) 100%);
+   width: 100%;
+    float: right;
+    overflow-x: hidden;
+}
+.container{
+    width: 1200px;
+    margin: 0 120px;
+
+}
+.container a{
+    color: #fff;
+}
+header{
+    padding: 50px 0;
+    position: relative;
+}
+
+header .logo{
+    margin-left: -80px;
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 800;
+}
+header nav{
+    float: right;
+    width: 50%;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+}
+header nav ul li{
+    display: inline-block;
+}
+header nav ul li a{
+    color: #fff;
+}
+header nav ul li.active::after{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 5px;
+    background: #DC7000;
+    border-radius: 10px;
+    position: relative;
+    top: 10px;
+    left: -15px;
+}
+header nav ul li:not(.active):not(.btn) a:hover{
+    border-bottom: 5px solid #DC7000;
+    transition: all 0.2s ease;
+}
+header nav ul li.btn a{
+    background: #FA9021;
+    padding: 9px 17px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+header nav ul li.btn a:hover{
+    background: #a02604;
+}
+
+.hero{
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+}
+.hero--info{
+    width: 527px;
+    height: 512px;
+    padding-top: 70px;
+}
+.hero--info h2{
+    color: #E87D0E;
+    font-size: 20px;
+    font-weight: 600;
+}
+.hero--info h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+.hero--info p{
+    font-weight: 500;
+    line-height: 170%;
+    margin: 30px 0;
+}
+.hero--info .btn-hero{
+    background: linear-gradient(90deg, rgba(250,131,5,1) 0%, rgba(251,158,60,1) 100%);
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 50px;
+    padding: 15px 30px;
+    border: 0;
+    transition: all 0.5s ease;
+}
+.hero--info .btn-hero:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.hero img{
+    position: absolute;
+    top: -150px;
+    right: -20px;
+    z-index: 0;
+}
+/* Секция с играми */
+
+.trending{
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 50px;
+    width: 1100px;
+}
+.trending h3{
+    font-weight: 600;
+    font-size: 31px;
+}
+.see-all{
+    color: #fff;
+    background: #25211D;
+    border-radius: 10px;
+    padding: 12px 23px;
+    float: right;
+    display: blocks;
+    transition: all 0.3s ease;
+}
+.trending .see-all:hover{
+    transform: scale(1.1);
+    background-color: #DC7000;
+}
+
+.trending .games{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 0;
+
+}
+.trending .games span{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 22px;
+}
+.trending .games span img{
+    position: relative;
+    top: 5px;
+    margin-right: 7px;
+}
+.text-undergames{
+    font-size: 35px;
+    color: #fff;
+    padding: 50px 0;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+}
+.banner{
+    padding: 80px 0;
+}
+.banner h3{
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.banner p{
+    line-height: 170%;
+    margin-bottom: 30px;
+    width: 550px;
+}
+.banner img{
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+/* Новая секция */
+
+.features{
+    background: url(.//images/back3.png) no-repeat center center fixed;
+    background-size: cover;
+    padding-top: 2450px;
+    padding-bottom: 20px;
+}
+
+.features h3{
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    font-weight: 600;
+    width: 830px;
+    text-align: center;
+}
+.features .par-feat{
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: 110px;
+    font-size: 16px;
+    text-align: center; 
+}
+.features .info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.features .info .block{
+    text-align: center;
+    width: 20%;
+    margin: 30px 2%;
+}
+.features .info .block img{
+    margin-bottom: 15px;
+}
+
+.projects{
+    padding: 100px 0;
+}
+.projects h3{
+    font-size: 30px;
+    text-align: center;
+}
+.projects p{
+    margin: 40px 0;
+    text-align: center;
+}
+.projects .images{
+    margin-bottom: 20px;
+    margin-right: 50px;
+    margin-left: -50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.projects a{
+    color: #fff;
+    background: #25211D;
+    border-radius: 10px;
+    padding: 12px 23px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    margin-right: 520px;
+    transition: all 0.3s ease;
+}
+.projects a:hover{
+    transform: scale(1.1);
+    background-color: #DC7000;
+}
+/* форма EMAIL */
+
+.email{
+    padding-bottom: 120px;
+}
+.email h3{
+    margin-top: 60px;
+    font-size: 30px;
+}
+.email p{
+    width: 550px;
+}
+.email .block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    padding-left: 80px;
+    background-color: #1C140F;
+    margin-top: 30px;
+    margin-right: 60px;
+    margin-left: -45px;
+    border-radius: 10px;
+}
+.email .block h4{
+    font-size: 30px;
+}
+.email .block p{
+    width: 500px;
+}
+.email .block input{
+   background: #fff;
+   outline: none;
+   border: 0;
+   border-radius: 8px;
+   width: 380px;
+   font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    padding: 18px 15px;
+    position: relative;
+    right: -80px;
+    top: 15px;
+    z-index: 1;
+    padding-right: 120px;
+}
+.email .block input::placeholder{
+    color: #898989;
+   
+}
+.email .block button{
+    width: 105px;
+    background: #FA9021;
+    padding: 9px 17px;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.3s ease;
+    color: #fff;
+    font-size: 13px;
+    position: relative;
+    left: 480px;
+    top: -30px;
+    z-index: 2;
+}
+.email .block button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+footer{
+    background: black;
+    padding: 50px 0;
+}
+footer .blocks{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+footer .logo{
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 800;
+}
+footer .blocks p{
+    width: 300px;
+    margin: 15px 0;
+}
+footer .blocks h4{
+    font-weight: 500;
+    font-size: 17px;
+}
+footer .blocks ul{
+    list-style: none;
+}
+footer .blocks ul li{
+    margin-top: 7px 0;
+    opacity: 0.8;
+}
+footer hr{
+    margin: 30px 0;
+    border: 0;
+    height: 0.6px;
+    background: #ccc;
+}
+footer > p{
+    text-align: center;
+}
+footer .blocks img{
+    padding-top: 80px;
+}
+
+/* страница o нас */
+.sp-ab{
+    font-family: 'Poppins', sans-serif;
+}
+#about-us{
+    color: #E47500;
+}
+.hero-about{
+    position: relative;
+}
+.hero-about #about{
+    position: absolute;
+    width: 640px;
+    height: 650px;
+    top: -10px;
+    right: -29px;
+}
+.hero-about .info{
+    width: 425px;
+    height: 450px;
+    padding: 150px 0;
+    margin-left: -20px;
+}
+.hero-about .info h1{
+    margin-bottom: 15px;
+    margin-top: 60px;
+    font-size: 30px;
+}
+.hero-about .info .btn{
+    background: linear-gradient(90deg, rgba(250,131,5,1) 0%, rgba(251,158,60,1) 100%);
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 50px;
+    padding: 15px 30px;
+    border: 0;
+    transition: all 0.5s ease;
+    margin-top: 50px;
+}
+.hero-about .info .btn.btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.work{
+    padding-bottom: 80px ;
+}
+.work h2{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.work .blocks{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+    margin: 60px;
+    margin-right: 135px;
+}
+.work .blocks .block{
+    width: 380px; 
+    border-radius: 10px;
+    padding: 50px 35px;
+    background: #1C140F;
+}
+.work .blocks .block h3{
+    font-size: 20px;
+    margin: 20px 0;
+}
+.work .blocks .block .badge{
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: black;
+}
+.work .blocks .block .badge.purple{
+    background: #B000DC;
+}
+.work .blocks .block .badge.brown{
+    background: #DC4200;
+}
+.work .blocks .block .badge.green{
+    background: #00DC8D;
+}
+
+.work2{
+    position: relative;
+    background: #1C140F;
+    padding: 75px 100px;
+    margin: 70px -50px;
+}
+.work2 .inform{
+    width: 536px;
+    margin-top: 20px;
+    padding-left: 600px;
+}
+.work2 .inform p{
+    padding: 30px 0;
+}
+.work2 .inform h3{
+    font-size: 28px;
+}
+.work2 #work2-form{
+    position: absolute;
+    padding-left: 30px;
+    padding-bottom: -10px;
+}
+.our-team{
+    padding: 30px 100px;
+    margin-bottom: 20px;
+}
+.our-team .members{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+.our-team .members .team-1{
+    padding: 15px 60px;
+    background: #1C140F;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Сайт портфолио */
+
+.portfolio{
+    padding: 10px 20px;
+    margin-bottom: 50px;
+}
+.port-ab{
+    text-align: center;
+    margin-left: -150px;
+    padding-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.portfolio h2{
+    text-align: center;
+    margin-left: -150px;
+    font-size: 33px;
+    padding-bottom: 10px;
+}
+.portfolio p{
+    text-align: center;
+    margin-left: -150px;
+    padding-bottom: 10px;
+}
+.portfolio .statistics{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    padding: 10px 40px;
+    margin-left: 100px;
+    background: #1C140F;
+    border-radius: 10px;
+}
+.portfolio .statistics .static{
+    padding-top: 10px;
+    text-align: center;
+    align-items: center;
+    border: 2px solid white;
+}
+
+.portfolio .statistics .static h3{
+    margin-left: -150px;
+}
+.portfolio .statistics .static p{
+    margin-left: -130px;
+}
+.video{
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 150px 0;
+}
+.video #video{
+    position: absolute;
+    
+    top: 20px;
+    right: 550px;
+}
+.video .discrip{
+    margin-top: -140px;
+    padding-left: 750px;
+    width: 400px;
+}
+.video .discrip h2{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.video .discrip p{
+    font-size: 14px;
+    padding-bottom: 30px;
+}
+.video .discrip ul{
+    list-style: none;
+}
+.video .discrip ul li{
+    padding-bottom: 20px;
+}
+.video .discrip ul li img{
+    vertical-align: middle;
+}
+
+/* продолжение портфолио */
+.read{
+    margin: 5px 0;
+    padding: 5px auto;
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    position: relative;
+}
+.read-more{
+    width: 540px;
+    height: 460px;
+    padding-left: 100px;
+}
+.read-more h3{
+    font-size: 30px;
+    margin-bottom: 6px;
+}
+.read-more p{
+    margin: 60px 0
+}
+.read-more .btn-read{
+    padding: 15px 25px;
+    font-family: sans-serif;
+    font-size: 17px;
+    background: #DC7000;
+    border: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    font-weight: 400;
+}
+.read-more .btn-read:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+.second-read{
+    margin-top: 70px;
+    padding-top: 70px;
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    position: relative;
+}
+.second-read img{
+    margin-left: 90px;
+}
+.second-more{
+    width: 540px;
+    height: 460px;
+    padding-left: 100px;
+}
+.second-more h3{
+    font-size: 30px;
+    margin-bottom: 6px;
+}
+.second-more p{
+    margin: 60px 0
+}
+.second-more .btn-second{
+    padding: 15px 25px;
+    font-family: sans-serif;
+    font-size: 17px;
+    background: #DC7000;
+    border: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    font-weight: 400;
+}
+.second-more .btn-second:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+.third-read{
+    margin-top: 70px;
+    padding-top: 70px;
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    position: relative;
+}
+.third-more{
+    width: 540px;
+    height: 460px;
+    padding-left: 100px;
+}
+.third-more h3{
+    font-size: 30px;
+    margin-bottom: 6px;
+}
+.third-more p{
+    margin: 60px 0
+}
+.third-more .btn-third{
+    padding: 15px 25px;
+    font-family: sans-serif;
+    font-size: 17px;
+    background: #DC7000;
+    border: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    font-weight: 400;
+}
+.third-more .btn-third:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* описание отзывов в профиле */
+.profile-team{
+    background: #1C140F;
+    margin: 150px 0;
+    padding: 20px 0;
+}
+.profile-team .pro{
+    padding: 20px 95px;
+    padding-left: 450px;
+    font-size: 35px;
+    text-align: center;
+    width: 450px;
+}
+.profile-team .prop{
+    padding: 20px 95px;
+    padding-left: 400px;
+    text-align: center;
+    width: 550px;
+}
+/* отзывы на профиле от людей */
+.recenz{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    margin-left: 60px;
+}
+.recenz .recenz-1, .recenz-2, .recenz-3{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+    padding: 30px;
+    border: 2px solid #fff;
+    width: 600px;
+    margin: 0 20px;
+    border-radius: 15px;
+}
+.trup-1{
+    padding-top: 30px;
+}
+.recenz .opisanie-star{
+    padding-top: 20px;
+}
+
+
+.placetojs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px 60px 0 80px;
+    padding-top: 30px;
+}
+.placetojs .scrolling{
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+}
+.placetojs .placetobtn{
+    display: flex;
+    justify-content: space-between;
+    width: 9%;
+    align-items: center;
+    text-align: center;
+}
+.placetojs .placetobtn .portbtn{
+    border-radius: 100%;
+    border: 2px solid #DC7000;
+    padding: 4px;
+    background: #1C140F;
+    cursor: pointer;
+}
+#portbtn2{
+    transform: rotate(180deg);
+}
+
+
+
+/* сайт ABOUT US */
+
+
+.hero-contacts h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 33px;
+}
+.hero-contacts p{
+    text-align: center;
+}
+.hero-contacts img{
+    width: 70%;
+    margin: 80px 100px;
+}
+
+.feedback{
+    padding: 70px 0;
+    background: #1C140F;
+}
+.feedback .container{
+    margin-left: 90px;
+}
+.feedback h2{
+    font-weight: 500;
+    text-align: center;
+    font-size: 30px;
+}
+.feedback p{
+    text-align: center;
+    margin-top: 10px;
+}
+.feedback form{
+    margin: 80px auto;
+    width: 600px;
+}
+.feedback form .inline{
+    display: flex;
+    justify-content: space-between;
+}
+.feedback form .inline > div{
+    width: 50%;
+}
+.feedback form label{
+    color: #4F4F4F;
+    font-size: 14px;
+}
+.feedback form input,
+.feedback form textarea{
+    background: #2C2420;
+    border-radius: 10px;
+    border: 0.6px solid #CECECE;
+    display: block;
+    width: 90%;
+    padding: 15px 10px;
+    outline: none;
+    color: #fff;
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+.feedback form .one-line{
+    width: 96%;
+}
+.feedback form textarea{
+    resize: none;
+    height: 200px;
+}
+.feedback form button{
+    background: #DC7000;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    float: right;
+    transition: all 0.5s ease;
+}
+.feedback form button:hover{
+    transform: scale(1.1);
+    background: red;
+}
